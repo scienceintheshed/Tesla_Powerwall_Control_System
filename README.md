@@ -1,5 +1,5 @@
 # Tesla Powerwall Control System
-
+![License](https://img.shields.io/github/license/scienceintheshed/Tesla_Powerwall_Control_System?label=LICENSE&style=for-the-badge)
 
 A series of python scripts to control charging of a Powerwall 2
 
