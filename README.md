@@ -1,6 +1,7 @@
 # Tesla Powerwall Control System
-![License](https://img.shields.io/github/license/scienceintheshed/Tesla_Powerwall_Control_System?label=LICENSE&style=for-the-badge)
-![Issues](https://img.shields.io/github/issues/scienceintheshed/Tesla_Powerwall_Control_System?style=for-the-badge)
+![License](https://img.shields.io/github/license/scienceintheshed/Tesla_Powerwall_Control_System?label=LICENSE&?style=plastic&logo=appveyor)
+![Forks](https://img.shields.io/github/forks/scienceintheshed/Tesla_Powerwall_Control_System?style=plastic&logo=appveyor)
+![Issues](https://img.shields.io/github/issues/scienceintheshed/Tesla_Powerwall_Control_System?style=plastic&logo=appveyor)
 
 A series of python scripts to control charging of a Powerwall 2
 
