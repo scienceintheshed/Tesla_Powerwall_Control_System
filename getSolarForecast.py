@@ -6,7 +6,7 @@ from datetime import timedelta
 dateToday = datetime.today()
 dateTomorrow = datetime.today() + timedelta(days=1)
 
-#   The requests.get statement along with the url connects to the weatherapi site.
+#   The requests.get statement along with the url connects to the Solcast site.
 res = requests.get('https://api.solcast.com.au/rooftop_sites/YourRooftopSite/forecasts.json?api_key=YourApiKey')
 
 #   Here we convert the data to json format
