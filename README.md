@@ -6,13 +6,15 @@
 A series of python scripts to control charging of a Powerwall 2.  This is my first public repository so please be nice to me.
 
 ## Background.
-The Tesla Powerwall 2 is a very good battery system for storing excess generated solor power that can then be used once the sun has set.  An additional feature that does not appear to be widely used is the ability to charge the battery from the grid.  This is particuliarly useful is you are on a Time of Use (TOU) tarrif where electricity charges are lower between the hours of say 10:00pm to 7:00am.
+The Tesla Powerwall 2 is a very good battery system for storing excess generated solar power that can then be used once the sun has set.  An additional feature that does not appear to be widely used is the ability to charge the battery from the grid.  This is particuliarly useful if you are on a Time of Use (TOU) tarrif where electricity charges are lower between the hours of say 10:00pm to 7:00am.  Whilst it is possible to manually charge the battery by changing the Backup Reserve in the Tesla App, if your like me, sometime it doesn't happen.  In the original development of this system, the Backup Reserve was simply set to a "guesstimate" based on what the weather report was for the following day.  Sunny day, low reserve.  Overcast or rain, high reserve.  This then progressed to a more "scientific" approach whereby the following days weather was checked from [weatherapi.com](www.weatherapi.com).  By decodeing the icon used to describe tomorrows weather, preset Backup Reserves could be set based on the icon.
 
-## Communicating with the Tesla Powerwall 2.
-This repository uses the python libraries of [Michiel Lowijs](https://github.com/mlowijs/tesla_api/tree/fix-auth) and [Simon Moore](https://github.com/swm11/tesla_api) to gain web access to the endpoints of a Tesla Powerwall 2.  As of December 2020, [Michiel Lowijs'](https://github.com/mlowijs/tesla_api/tree/fix-auth) version now uses AsyncIO and is still under active development so is the preferred version. 
+The latest iteration of the system uses estimates of the following days solar generation to determine any shortfall in solar production over consumptuion as described in the next section.
 
 ## Estimating solar generation.
 [Solcast](https://solcast.com) have developed a series of tools that enable owners of solar systems to estimate the upcoming output of their arrays.  These forecasts are based on both ground based and satellite observations of weather patterns and cloud cover and can extend up to 3 days in the future.  Creating a free account allows use of their API to measure your solar systems performance as well as download solar generation estimates.  We use these following day estimates of solar generation to calculate the shorfall in solar generation over consumption for that day.
+
+## Communicating with the Tesla Powerwall 2.
+This repository uses the python libraries of [Michiel Lowijs](https://github.com/mlowijs/tesla_api/tree/fix-auth) and [Simon Moore](https://github.com/swm11/tesla_api) to gain web access to the endpoints of a Tesla Powerwall 2.  As of December 2020, [Michiel Lowijs'](https://github.com/mlowijs/tesla_api/tree/fix-auth) version now uses AsyncIO and is still under active development so is the preferred version. 
 
 ## Description of Python Scripts
 ### tesla5%.py
