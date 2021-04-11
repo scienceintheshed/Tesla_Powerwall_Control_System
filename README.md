@@ -22,6 +22,7 @@ This script gets the next days solar generation prediction from [Solcast](https:
 This script calculates the shortfall (if any) in the next days solar generation over consumption.  Once the shortfall is calculated, the value of the Powerwall reserve is changed.
 
 ### write2Adafruit.py
+This script is run continuously to update the adafruit.io dashboard.  There is ample documentation available for creating an Adafruit dashboard so it will not be covered here.  Suffice to say that a free account is all that is needed if you wish to visualise the status of your system.
 
 ## Suggested mode of operation.
-Whilst it is possible to 
+Whilst it is possible to incorporate all the above scripts into one module, I have found it better to schedule tesla5%.py, and calcPowerwallReserve.py using either Windows Task Scheduler (if this is run on a Windows PC) or create cron jobs if Raspberry Pi boards are used.
