@@ -10,3 +10,7 @@ This repository uses the python libraries of [Michiel Lowijs](https://github.com
 
 #### Estimating solar generation.
 [Solcast](https://solcast.com) have developed a series of tools that enable owners of solar systems to estimate the upcoming output of their arrays.  These forecasts are based on both ground based and satellite observations of weather patterns and cloud cover and can extend up to 3 days in the future.  Creating a free account allows use of their API to measure your solar systems performance as well as download solar generation estimates.  We use these following day estimates of solar generation to calculate the shorfall in solar generation over consumption for that day.
+
+#### Description of Python Scripts
+##### Tesla5%.py
+This is the simple script that is run during the morning to reset the Powerwall 2's reserve for power outages.  This value can be set to any value from 0% to 100% depending on circumstances.
