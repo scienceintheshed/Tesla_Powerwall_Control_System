@@ -9,7 +9,7 @@ homeRequirements=25
 
 async def main():
     try:
-        client = TeslaApiClient('YourPowerwallUsername', 'UourPowerwallPassword')
+        client = TeslaApiClient('YourPowerwallUsername', 'YourPowerwallPassword')
         energy_sites = await client.list_energy_sites()
         reserve = await energy_sites[0].get_backup_reserve_percent()
         charge = await energy_sites[0].get_energy_site_live_status_percentage_charged() / 100 * 13.4
