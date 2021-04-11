@@ -19,4 +19,9 @@ This is the simple script that is run during the morning to reset the Powerwall 
 This script gets the next days solar generation prediction from [Solcast](https://solcast.com).  The script is called from calcPowerwallReserve.py and simply returns the predicted solar generation in kW's.
 
 ### calcPowerwallReserve.py
+This script calculates the shortfall (if any) in the next days solar generation over consumption.  Once the shortfall is calculated, the value of the Powerwall reserve is changed.
 
+### write2Adafruit.py
+
+## Suggested mode of operation.
+Whilst it is possible to 
