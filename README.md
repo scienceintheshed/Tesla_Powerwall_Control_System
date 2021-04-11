@@ -5,7 +5,10 @@
 
 A series of python scripts to control charging of a Powerwall 2.  This is my first public repository so please be nice to me.
 
-## Communicating with the Tesla Powerwall 2
+## Background.
+The Tesla Powerwall 2 is a very good battery system for storing excess generated solor power that can then be used once the sun has set.  An additional feature that does not appear to be widely used is the ability to charge the battery from the grid.  This is particuliarly useful is you are on a Time of Use (TOU) tarrif where electricity charges are lower between the hours of say 10:00pm to 7:00am.
+
+## Communicating with the Tesla Powerwall 2.
 This repository uses the python libraries of [Michiel Lowijs](https://github.com/mlowijs/tesla_api/tree/fix-auth) and [Simon Moore](https://github.com/swm11/tesla_api) to gain web access to the endpoints of a Tesla Powerwall 2.  As of December 2020, [Michiel Lowijs'](https://github.com/mlowijs/tesla_api/tree/fix-auth) version now uses AsyncIO and is still under active development so is the preferred version. 
 
 ## Estimating solar generation.
