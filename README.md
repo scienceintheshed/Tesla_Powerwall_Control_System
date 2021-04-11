@@ -3,7 +3,7 @@
 ![Forks](https://img.shields.io/github/forks/scienceintheshed/Tesla_Powerwall_Control_System?style=plastic&logo=appveyor)
 ![Issues](https://img.shields.io/github/issues/scienceintheshed/Tesla_Powerwall_Control_System?style=plastic&logo=appveyor)
 
-A series of python scripts to control charging of a Powerwall 2
+A series of python scripts to control charging of a Powerwall 2.  This is my first public repository so please be nice to me.
 
 ## Communicating with the Tesla Powerwall 2
 This repository uses the python libraries of [Michiel Lowijs](https://github.com/mlowijs/tesla_api/tree/fix-auth) and [Simon Moore](https://github.com/swm11/tesla_api) to gain web access to the endpoints of a Tesla Powerwall 2.  As of December 2020, [Michiel Lowijs'](https://github.com/mlowijs/tesla_api/tree/fix-auth) version now uses AsyncIO and is still under active development so is the preferred version. 
